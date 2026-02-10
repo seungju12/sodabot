@@ -4,3 +4,4 @@
 
 ## .env
 DISCORD_TOKEN
+DB_PATH

@@ -14,3 +14,13 @@ interaction.response.edit_message() 형태로 변경
 
 ### 로비 생성 패널 메세지 정확히 식별
 embed title + create 버튼을 custom_id로 확인
+
+## 2026-02-10
+### 데이터 영속화
+로비/참가자/상태 등을 bot.db에 저장, sqlite3 사용
+
+### 저장 형식 통일
+참가자는 position1/position2/tier 컬럼 구조로 통일
+
+### 시간 및 요일 추가
+DB에 ISO로 저장
