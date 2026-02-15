@@ -48,7 +48,8 @@ def init_db():
     - lobby_members: 각 로비의 참가자 정보
     """
     with db_connect() as conn:
-        conn.execute("""  # 로비 정보 저장
+        # 로비 정보 저장
+        conn.execute("""
         CREATE TABLE IF NOT EXISTS lobbies (
             lobby_message_id INTEGER PRIMARY KEY,
             guild_id INTEGER NOT NULL,
